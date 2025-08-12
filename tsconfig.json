@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
+      "@/*": [ //Diretório relativo para o src
+        "./src*" //Colocar o src no ./ poque o expo cria o projeto sem pasta source, por padrão vem sem src
       ]
     }
   },
