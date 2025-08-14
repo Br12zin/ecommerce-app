@@ -8,7 +8,7 @@ export default function TabsLayout() {
             <Tabs 
                 screenOptions={{
                 headerShown: false, //esconde o cabeçalho padrão
-                tabBarShowLabel: false,
+                tabBarShowLabel: false, //esconde o texto abaixo dos ícones
                 tabBarActiveTintColor: colors.gray[100], //cor do ícone ativo
                 tabBarInactiveTintColor: colors.gray[400], //cor do ícone inativo
                 tabBarStyle: {
@@ -35,7 +35,7 @@ export default function TabsLayout() {
             />
             <Tabs.Screen name="cart" options={{
                 tabBarIcon:({color, size}) => (
-                <Feather name="shopping-cart" color={color} size={size} />
+                <Feather name="shopping-bag" color={color} size={size} />
             )
             }}
             />

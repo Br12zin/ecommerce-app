@@ -1,12 +1,16 @@
 import { Text, View } from 'react-native'
 import React from 'react'
 import colors from '../styles/colors';
+import Header from '@//components/header';
 
 export default function Cart() {
 
     return (
-      <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
-        <Text style={{color: colors.black}}>Cart</Text>
+      <>
+      <Header />
+      <View style={{flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.gray[800]}}>
+        <Text style={{color: colors.white}}>Cart</Text>
       </View>
+      </>
     );
 }
