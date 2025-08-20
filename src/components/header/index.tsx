@@ -1,12 +1,18 @@
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
-import colors from '../../app/styles/colors'
+import colors from '../../styles/colors'
 import {Feather} from "@expo/vector-icons"
+import { DrawerActions, useNavigation } from '@react-navigation/native';
 
 export default function Header() {
+  const navigation = useNavigation();
+
     return (
       <View style={styles.container}>
+
+        <TouchableOpacity onPress={() => {navigation.dispatch(DrawerActions.toggleDrawer());}}>
         <Feather name="menu" style={styles.icon} />
+        </TouchableOpacity>
         <Text style={styles.title}>Logo</Text>
         <Feather name="shopping-cart"  style={styles.icon} />
       </View>
