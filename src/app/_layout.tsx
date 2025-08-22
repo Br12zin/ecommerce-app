@@ -25,6 +25,22 @@ export default function Layout() {
         )
       }}
       />
+      <Drawer.Screen name = "category/index"
+      options={{
+        title: "Categorias",
+        drawerIcon: ({color, size}) => (
+          <Feather name="grid" color={color} size={size} />
+        )
+      }}
+      />
+      <Drawer.Screen name = "product/index"
+      options={{
+        title: "Produtos",
+        drawerIcon: ({color, size}) => (
+          <Feather name="box" color={color} size={size} />
+        )
+      }}
+      />
       </Drawer>
     </GestureHandlerRootView>
   );

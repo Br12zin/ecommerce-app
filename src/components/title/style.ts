@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     },
   title: {
     fontSize: 24,
+    alignSelf: "center",
     fontWeight: "bold",
     color: colors.white,
     textAlign: "left",

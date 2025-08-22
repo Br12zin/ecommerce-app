@@ -5,12 +5,6 @@ export const styles = StyleSheet.create({
     container:{
         flex: 1,
     },
-    categoryList:{
-    padding: 12,
-    backgroundColor: colors.gray[200],
-    borderRadius: 12,
-    marginRight: 12,
-    },
     title:{
         textAlign: "left",
         color: colors.white,
@@ -18,7 +12,7 @@ export const styles = StyleSheet.create({
         fontSize: 25
     },
     list:{
-        marginLeft:20,
-        marginRight:20
+        marginLeft: 15,
+        marginRight: 15
     }
 });

@@ -14,7 +14,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({name}) => {
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.categoryItem}
-        onPress={() => router.push("/category/index")}
+        onPress={() => router.push("/category")}
         >
 
         <Text>{name}</Text>

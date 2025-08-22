@@ -3,15 +3,29 @@ import React from 'react'
 import colors from '@//styles/colors';
 import Title from '@//components/title';
 import Promo from '@//components/promo';
+import { ScrollView } from 'react-native';
+import CategoryList from '@//components/categoryList';
+import ProductList from '@//components/ProductList';
 
 
 export default function Index() {
 
     return (
       <>  
-      <View style={{flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.gray[800]}}>
+      <View style={{
+        flex: 1, 
+        justifyContent: "center", 
+        alignItems: "center", 
+        backgroundColor: colors.gray[800]
+        }}>
+
+
+          <ScrollView>
         <Title word={"Título"} />
-        <Promo urlImage={"https://picsum.photos/200/300"}/>
+        <Promo urlImage={"https://t4.ftcdn.net/jpg/02/81/21/03/240_F_281210331_DUn5TlK0N3Wq9aVMQmU3Ytmx3KhFFT0I.jpg"}/>
+        <CategoryList />
+        <ProductList />
+          </ScrollView>
       </View>
       </>
     );
