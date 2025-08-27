@@ -6,6 +6,7 @@ import Promo from '@//components/promo';
 import { ScrollView } from 'react-native';
 import CategoryList from '@//components/categoryList';
 import ProductList from '@//components/ProductList';
+import ProductList2 from '@//components/productList2';
 
 
 export default function Index() {
@@ -25,6 +26,7 @@ export default function Index() {
         <Promo urlImage={"https://t4.ftcdn.net/jpg/02/81/21/03/240_F_281210331_DUn5TlK0N3Wq9aVMQmU3Ytmx3KhFFT0I.jpg"}/>
         <CategoryList />
         <ProductList />
+        <ProductList2 />
           </ScrollView>
       </View>
       </>

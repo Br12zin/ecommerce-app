@@ -33,7 +33,7 @@ export default function Layout() {
         )
       }}
       />
-      <Drawer.Screen name = "product/index"
+      <Drawer.Screen name = "ProductDetail/[id]"
       options={{
         title: "Produtos",
         drawerIcon: ({color, size}) => (

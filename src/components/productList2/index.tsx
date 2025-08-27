@@ -1,6 +1,7 @@
 import { Text, View, FlatList } from 'react-native'
 import ProductItem from '../ProductItem';
 import {styles} from './style';
+import ProductItem2 from '../productItem2';
 
 
 
@@ -47,17 +48,16 @@ export const produtos = [
     price:120}
 ];
 
-export default function ProductList(){
+export default function ProductList2(){
   return(
     <View>
-      <Text style={styles.title}>Promoções</Text>
+      <Text style={styles.title}>Produtos</Text>
       <FlatList 
       style={styles.list}
-        data={produtos} // onde os dados são passados como array na props data
-        horizontal //para deixar a lista posição horizontal
+        data={produtos} // onde os dados são passados como array na props data 
         showsHorizontalScrollIndicator={false} // para esconder a barra de rolagem horizontal
         keyExtractor={item => item.id} //para definir uma chave única para cada item
-        renderItem={({ item }) => <ProductItem id={item.id} name={item.name} price={item.price} imagem={item.imagem} />} // para renderizar cada item da lista, passando o nome da categoria como props para o componente CategoryItem
+        renderItem={({ item }) => <ProductItem2 id={item.id} name={item.name} price={item.price} imagem={item.imagem} />} // para renderizar cada item da lista, passando o nome da categoria como props para o componente CategoryItem
       />
     </View>
   )

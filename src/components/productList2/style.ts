@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         fontSize: 25
     },
     list:{
-        marginLeft: 15,
-        marginRight: 15
+        alignSelf: "flex-start",
+        marginLeft: 15
     }
 });

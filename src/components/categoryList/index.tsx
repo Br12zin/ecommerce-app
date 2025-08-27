@@ -18,7 +18,7 @@ const categories = [
 export default function CategoryList(){
   return(
     <View>
-      <Text style={styles.title}>Categorias</Text>
+      <Text style={styles.title}></Text>
       <FlatList 
       style={styles.list}
         data={categories} // onde os dados são passados como array na props data

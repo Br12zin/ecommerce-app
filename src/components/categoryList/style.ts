@@ -12,10 +12,7 @@ export const styles = StyleSheet.create({
     marginRight: 12,
     },
     title:{
-        textAlign: "left",
-        color: colors.white,
-        padding: 20,
-        fontSize: 25
+        padding: 5
     },
     list:{
         marginLeft:20,
