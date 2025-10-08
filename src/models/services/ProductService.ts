@@ -15,7 +15,8 @@ export default class ProductService extends ApiService<Product> {
             method: 'GET',
             headers: this._headers,
         });
-        return response.json();
+        const json = await response.json();
+    return json.data;
     }
 
       async getAll(): Promise<Product[]> {
@@ -23,7 +24,8 @@ export default class ProductService extends ApiService<Product> {
       method: "GET",
       headers: this._headers,
     });
-    return response.json();
+    const json = await response.json();
+    return json.data;
   }
   async create(data: Product): Promise<Product>{
     const response = await fetch(this._baseUrl,{
@@ -31,7 +33,8 @@ export default class ProductService extends ApiService<Product> {
         headers: this._headers,
         body: JSON.stringify(data),
     });
-    return response.json()
+    const json = await response.json();
+    return json.data;
   }
   async update(id: number, data: Partial<Product>): Promise<Product>{
     const response = await fetch(`${this._baseUrl}${id}`,{
@@ -39,7 +42,8 @@ export default class ProductService extends ApiService<Product> {
         headers: this._headers,
         body: JSON.stringify(data),
     });
-    return response.json()
+    const json = await response.json();
+    return json.data;
   }
   async delete(id: number): Promise<void>{
     await fetch(`${this._baseUrl}${id}`,{

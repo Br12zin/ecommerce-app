@@ -25,9 +25,9 @@ const ProductItem: React.FC<ProductItemProps> = ({name, price, imagem, id}) => {
         }
         >
 
-        <Image source={{uri: imagem}} style={styles.image}  />
+        <Image source={{uri: imagem}}  style={styles.image} resizeMode='cover' />
         <Text style={styles.title}>{name}</Text>
-        <Text>{'R$' + price.toFixed(2)}</Text>
+        <Text>{'R$' + price}</Text>
         </TouchableOpacity>
       </View>
     )
