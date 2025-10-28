@@ -8,21 +8,21 @@ export class PaymentService extends ApiService<IPayment> {
     );
   }
 
-  async paymentIntent(data: IPayment): Promise<IPayment> {
+  async paymentIntent(valor: number): Promise<string> {
     const response = await fetch(this._baseUrl + "create-payment-intent", {
       method: "POST",
         headers: this._headers,
-        body: JSON.stringify(data),
+        body: JSON.stringify({ valor }),
     });
     if (!response.ok) {
       throw new Error("Erro ao criar pagamento");
     }
-    const payment: IPayment = await response.json();
-    return payment;
+    const data = await response.json();
+    return data.client_secret;
   }
 
   
-  async confirmPayment(id_pagamento: string): Promise<IPayment> {
+  async confirmPayment(id_pagamento: string): Promise<string> {
     const response = await fetch(this._baseUrl + "confirm-payment", {
       method: "POST",
       headers: this._headers,
@@ -31,9 +31,8 @@ export class PaymentService extends ApiService<IPayment> {
     if (!response.ok) {
       throw new Error("Erro ao confirmar pagamento");
     }
-    const payment: IPayment = await response.json();
-    return payment;
-  }
+    return await response.json();
+}
 
   //Métodos não utilizados
     getById():Promise<IPayment> {throw new Error("Não implementado"); }
