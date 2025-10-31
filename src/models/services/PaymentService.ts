@@ -4,7 +4,7 @@ import { ApiService } from "./ApiService";
 export default class PaymentService extends ApiService<IPayment> {
   constructor() {
     super(
-      "http://10.63.45.29:8080/pagamentos",
+      "http://10.63.45.25:8080/pagamentos",
       "DAenvhY03Rm2xspRZUmmKrj4PyzUNT4QjjVgK9XChTOe2yntmo9Rqbna7NcAVn2oPrZXoK8oRox6btrCuq59bdoXYaYBX8QVFcJj"
     );
   }

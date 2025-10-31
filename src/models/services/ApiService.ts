@@ -8,7 +8,7 @@ export abstract class ApiService<T> {
         this._baseUrl = baseUrl;
         this._headers = {
             'Content-Type': 'application/json',
-            Authorization: token
+            Authorization: token,
         };
     }
 
