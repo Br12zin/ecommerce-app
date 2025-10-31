@@ -28,7 +28,7 @@ export default function ProductList(){
         horizontal //para deixar a lista posição horizontal
         showsHorizontalScrollIndicator={false} // para esconder a barra de rolagem horizontal
         keyExtractor={item => item.id_produto.toString()} //para definir uma chave única para cada item
-        renderItem={({ item }) => <ProductItem id={item.id_produto.toString()} name={item.produto} price={item.preco} imagem={`http://10.63.45.25:8084/produtos/imagens/${item.imagem}`} />} // para renderizar cada item da lista, passando o nome da categoria como props para o componente CategoryItem
+        renderItem={({ item }) => <ProductItem id={item.id_produto.toString()} name={item.produto} price={item.preco} imagem={`http://10.63.45.25:8000/produtos/imagens/${item.imagem}`} />} // para renderizar cada item da lista, passando o nome da categoria como props para o componente CategoryItem
       />
     </View>
   )

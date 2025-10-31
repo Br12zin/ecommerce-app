@@ -4,7 +4,7 @@ export class ClienteService extends ApiService<Cliente> {
   constructor() {
     super(
       "http://10.63.45.59:8080/clientes/",
-      "stNOJvYxgbX3bRg3CEGMTNiqnIO3TMMHPi8K3ehLzk3KqcN3tJbDnBdMwWvAj84r2fiKvaAxQC58i1BsR5iqjBzzscwMudNv8xL6"
+      "DAenvhY03Rm2xspRZUmmKrj4PyzUNT4QjjVgK9XChTOe2yntmo9Rqbna7NcAVn2oPrZXoK8oRox6btrCuq59bdoXYaYBX8QVFcJj"
     );
   }
  

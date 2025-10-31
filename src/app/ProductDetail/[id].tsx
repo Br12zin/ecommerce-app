@@ -5,7 +5,7 @@ import { produtos } from '@//components/ProductList';
 
 export default function ProductDetail() {
     const {id} = useLocalSearchParams();
-    const product = produtos.find((p) => p.id === id);
+    const product = produtos.find((p: any) => p.id === id);
 
     return (
       <View>
